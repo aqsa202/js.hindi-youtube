@@ -1,35 +1,29 @@
-// ******date*******
+const score = 400
 
-let mydate = new Date()
-console.log(mydate.toString());
-console.log(mydate.toDateString());
-console.log(mydate.toISOString());
-console.log(mydate.toJSON());
-console.log(mydate.toTimeString());
-console.log(mydate.toLocaleDateString());
-console.log(mydate.toLocaleTimeString());
-console.log(typeof mydate);
+const balance = new Number(30)
+console.log(balance);
+console.log(score);
+console.log(balance.toString().length);
+console.log(balance.toFixed(3));
 
-let mycreateddate = new Date (2004,11,14)
-// let mycreateddate = new Date (2004-10-14)
-console.log(mycreateddate.toLocaleString());
-let mytimestamp = Date.now()
-console.log(mytimestamp);
-console.log(mycreateddate.getTime());
-console.log(Math.floor(Date.now()/1000));
+const othernumber = 134.6568
+console.log(othernumber.toPrecision(3));
 
-let newdate = new Date()
-console.log(newdate.getDay());
+const hunderds = 100000000
+console.log(hunderds.toLocaleString('en-IN'));
 
-newdate.toLocaleString('defult',{weekday:"long"})
-
-
-
-
-
-
-
-
-
-
-
+//************** */ Math**********
+console.log(Math);
+console.log(Math.abs(-4));
+console.log(Math.abs(4));
+console.log(Math.round(4.6));
+console.log(Math.ceil(4.2));
+console.log(Math.floor(4.2));
+console.log(Math.min(4,78,135));
+console.log(Math.max(4,67,56,445));
+console.log(Math.random());
+console.log((Math.random()*10)+1);
+console.log(Math.floor(Math.random()*10)+1);
+const min = 10 
+const max = 20
+console.log (Math.floor(Math.random()* (max - min + 1) ) + min)
